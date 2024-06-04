@@ -2,32 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Default btn */
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+  margin-top: 20px
+}
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+section{
+  width: 500px;
+  margin-bottom: 10px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.item-box{
+  width: 500px;
+  background: rgb(212, 212, 212);
+  margin-bottom: 10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.answer{
+  background: rgb(101, 196, 122);
+}
+
+.colourChange{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.colorBtn{
+  margin-left: 10px;
+}
+
+.Rating-div{
+display: flex;
+}
+
+.activeRating{
+  color: yellow;
+}
+
+.corousal{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.totalImgOverview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:3px;
+}
+
+.activeImage{
+  color: greenyellow;
+}
+
+.products-box{
+  display: grid;
+  gap: 140px;
+  grid-template-columns: repeat(3, 40px);
+}
+
+.product-card{
+border:  1px solid red;
+padding: 5px 5px 5px 5px;
+width: 150px;
 }
