@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --background:#ffffff;
+}
+[data-theme='dark']{
+  --backgroundColour:#000000;
+}
+
 /* Default btn */
 .btn {
   @apply font-bold py-2 px-4 rounded;
@@ -13,6 +20,7 @@
 .btn-blue:hover {
   @apply bg-blue-700;
 }
+
 
 section{
   width: 500px;
@@ -77,4 +85,52 @@ display: flex;
 border:  1px solid red;
 padding: 5px 5px 5px 5px;
 width: 150px;
+}
+
+ul{
+  list-style-type: disc;
+  margin: 15px;
+  /* padding: 5px; */
+}
+
+.light{
+  background-color: aqua;
+}
+.dark{
+  background-color: gray;
+}
+
+#body-copy{
+  width: 100%;
+background-color: var(--backgroundColou);
+}
+
+.scrollComponent{
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+ 
+}
+
+.Top-Container{
+  background-color: aliceblue;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+}
+
+.full-scroll-bar{
+  height: 20px;
+  background-color: bisque;
+}
+
+.scroll-progress{
+  height: 20px;
+  background-color: greenyellow;
+  width: 0%;
+}
+
+.products-container{
+  margin-top: 20px;
 }
