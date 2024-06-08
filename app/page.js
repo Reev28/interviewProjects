@@ -7,6 +7,9 @@ import LoadMore from "@/components/LoadMore"
 import TreeNavigation from "@/components/TreeNavigation";
 import Theme from "@/components/Theme";
 import { ScrollTracker } from "@/components/ScrollTracker";
+import ModalPage from "@/components/ModalPage";
+import GithubProfileFinder from "@/components/GithubProfileFinder";
+import SimpleForm from "@/components/SimpleForm";
 
 let data = [
   {
@@ -46,7 +49,10 @@ export default function Home() {
       <LoadMore />
       <TreeNavigation menu={initialArr} /> */}
       {/* <Theme /> */}
-      <ScrollTracker url={'https://dummyjson.com/products?limit=100'} />
+      {/* <ScrollTracker url={'https://dummyjson.com/products?limit=100'} /> */}
+      {/* < ModalPage /> */}
+      {/* <GithubProfileFinder /> */}
+      <SimpleForm />
     </main>
   );
 }

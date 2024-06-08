@@ -9,6 +9,10 @@
   --backgroundColour:#000000;
 }
 
+.p-24{
+  padding: 0px;
+}
+
 /* Default btn */
 .btn {
   @apply font-bold py-2 px-4 rounded;
@@ -133,4 +137,65 @@ background-color: var(--backgroundColou);
 
 .products-container{
   margin-top: 20px;
+}
+
+.modal-box{
+  background-color: aliceblue ;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.modal{
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  padding-top: 6rem;
+
+}
+
+.modal-Header{
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  gap:365px;
+}
+
+
+.modal-body{
+  background-color: white;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.gitSearchOption{
+  display: flex;
+  justify-content: center;
+}
+
+.GitProfileCard{
+display: flex;
+flex-direction: column;
+gap: 10px;
+align-items: center;
+margin-top: 20px;
+}
+
+.SimpleForm{
+  margin-top: 20px;
+}
+
+input{
+border:  1px solid black;
+border-radius: 5px;
+}
+
+.Form-field-input-error{
+  color: red;;
 }
